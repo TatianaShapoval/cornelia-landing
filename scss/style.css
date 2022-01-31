@@ -1,4 +1,4 @@
-.logo, .top__title-main, .top__title-second {
+.logo, .top__title-main, .top__title-second, .infinity__title {
   font-family: 'Black Han Sans', sans-serif;
   font-weight: 400;
 }
@@ -122,17 +122,35 @@ body {
   margin-bottom: 50px;
 }
 
-.header__inner {
+.header {
+  height: 80px;
+  padding: 20px 0 20px;
+}
+
+.header__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 80px;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-size: 16px;
   line-height: 22px;
   font-weight: 600;
@@ -162,17 +180,17 @@ body {
 }
 
 .menu__item {
-  padding: 0 20px;
+  padding-right: 43px;
 }
 
 .top__inner {
-  height: 820px;
+  height: 737px;
   background-image: url("../images/top-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   text-align: center;
-  padding: 100px 0;
+  padding: 36px 0 0;
 }
 
 .top__title {
@@ -202,13 +220,42 @@ body {
   content: "";
   position: absolute;
   z-index: -1;
-  background-image: url("../images/unicorn.png");
+  background-image: url("../images/unicorn2.png");
   background-repeat: no-repeat;
   background-position: center center;
-  width: 1224px;
-  height: 688px;
-  -webkit-transform: translateX(-34%);
-          transform: translateX(-34%);
-  top: -158%;
+  width: 535px;
+  height: 573px;
+  -webkit-transform: translateX(-16%);
+          transform: translateX(-16%);
+  top: -120%;
+}
+
+.infinity {
+  background-image: url("../images/infinity-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.infinity__title {
+  color: #fff;
+  font-size: 80px;
+  line-height: 96px;
+  max-width: 750px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.infinity__text {
+  color: #fff;
+  max-width: 750px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.infinity__text span {
+  font-weight: 800;
 }
 /*# sourceMappingURL=style.css.map */
