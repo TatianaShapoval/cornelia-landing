@@ -2,6 +2,36 @@
 
 
 
+
+%blackhansans-regular{
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+%nunito-regular{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}
+%nunito-semibold{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+%nunito-bold{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+%nunito-extrabold{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+}
+%nunito-black{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+}
+
+$rose: #FFCCBC;
+$default: #0B4141;
 // %sf-light{
 //     font-family: 'SFProDisplay-Light', sans-serif;
 //     font-weight: 300;
@@ -10,28 +40,4 @@
 // %sf-medium{
 //     font-family: 'SFProDisplay-Medium', sans-serif;
 //     font-weight: 500;
-// }
-// %sf-semibold{
-//     font-family: 'SFProDisplay-Semibold', sans-serif;
-//     font-weight: 600;
-// }
-// %sf-bold{
-//     font-family: 'SFProDisplay-Bold', sans-serif;
-//     font-weight: 700;
-// }
-// %ubuntu-light{
-//     font-family: 'Ubuntu', sans-serif;
-//     font-weight: 300;
-// }
-// %ubuntu-regular{
-//     font-family: 'Ubuntu', sans-serif;
-//     font-weight: 400;
-// }
-// %ubuntu-medium{
-//     font-family: 'Ubuntu', sans-serif;
-//     font-weight: 500;
-// }
-// %ubuntu-bold{
-//     font-family: 'Ubuntu', sans-serif;
-//     font-weight: 700;
 // }
