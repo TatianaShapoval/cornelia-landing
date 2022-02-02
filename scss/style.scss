@@ -100,7 +100,7 @@
 .infinity{
     background-image: url('../images/infinity-bg.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    
     background-size: cover;
     text-align: center;
     padding: 100px 0;
@@ -122,4 +122,316 @@
             font-weight: 800;
         }
     }
+}
+.destiny{
+    height: 800px;
+    background-image: url('../images/destiny-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: left;
+    padding: 50px 0;
+    &__title{
+        color: $rose;
+        max-width: 407px;
+    }
+    &__text{
+        color: $rose;
+        max-width: 475px;
+        
+        margin-bottom: 48px;
+        text-align-last: left;
+        
+    }
+    &__btn{
+        color: $rose;
+        background-color: transparent;
+        padding: 12px 34px;
+        border: 1px solid $rose;
+        border-radius: 124px;        
+        cursor: pointer;
+    }
+}
+
+.futher{
+    height: 700px;
+    padding: 84px 0;
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title{
+        color: $rose;
+        max-width: 330px;
+    }
+    &__text{
+        max-width: 475px;
+        
+        margin-bottom: 48px;
+        
+    }
+    &__link{
+        font-size: 16px;
+        position: relative;
+        padding-left: 25px;
+        &::before{
+            content: "";
+            position: absolute;
+            background-image: url('../images/icons/mouse.svg');
+            width: 16px;
+            height: 24px;
+            top: -1px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+        }
+    }
+    
+}
+.quality{
+    height: 700px;
+    padding: 84px 0;
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title{
+        
+        max-width:400px;
+    }
+    &__text{
+        max-width: 475px;
+        
+        margin-bottom: 48px;
+        
+    }
+    
+    
+}
+.magic{
+    text-align: center;
+    padding: 100px 0;
+    &__title{
+        @extend %blackhansans-regular;
+        color: $rose;
+        font-size: 80px;
+        line-height: 96px;
+        max-width: 750px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    &__text{
+        max-width: 750px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        span{
+            font-weight: 800;
+        }
+    }
+}
+.rewievs{
+
+    background-image: url('../images/rewiev-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    
+    padding: 50px 0;
+    &__title{
+        color: #fff;
+    }
+    &__content{
+        margin: 0 auto;
+        max-width: 972px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__first-column{
+        height: 100%;
+        
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+    &__second-column{
+        height: 100%;
+        
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+    &__third-column{
+        height: 100%;
+        
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+    &__item{
+        width: 304px;
+        height: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+    
+    }
+    &__text{
+        font-size: 13px;
+        line-height: 17px;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    &__item-box{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    &__item-person{
+        padding-left: 15px;
+        font-size: 14px;
+        font-weight: 800;
+        text-align: left;
+        line-height: 22px;
+    }
+    &__position{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+}
+.lesser{
+    height: 800px;
+    background-image: url('../images/lesser-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 50px 0;
+    &__content{
+        max-width: 507px;
+        margin-left: auto;
+    }
+    
+    &__text{
+        margin-bottom: 48px; 
+    }
+    &__btn{
+        color: $default;
+        background-color: transparent;
+        padding: 12px 34px;
+        border: 1px solid $default;
+        border-radius: 124px;        
+        cursor: pointer;
+    }
+}
+.app{
+    height: 800px;
+    background-image: url('../images/app-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    padding: 50px 0;
+    &__content{
+        max-width: 500px;
+        
+    }
+    &__img{
+        padding-left: 180px;
+        margin-bottom: 30px;
+    }
+    &__title{
+        text-align: left;
+    }
+    &__text{
+        text-align: left;
+        margin-bottom: 48px;
+        
+        
+    }
+    &__btn{
+        color: $default;
+        background-color: transparent;
+        padding: 12px 34px;
+        border: 1px solid $default;
+        border-radius: 100px;        
+        cursor: pointer;
+        text-align: left;
+    }
+}
+.footer{
+   
+    padding: 160px 0 45px;
+    background-color: $default;
+    &__title{
+        text-align: center;
+        @extend %blackhansans-regular;
+        color: $rose;
+        font-size: 80px;
+        line-height: 96px;
+        max-width: 750px;
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+    &__content{
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 750px;
+        margin-bottom: 130px;
+    }
+   
+    &__btn{
+        color: $rose;
+        background-color: $default;
+        padding: 21px 30px;
+        border: 1px solid $rose;
+        border-radius: 100px;        
+        cursor: pointer;
+        position: relative;
+        padding-left: 65px;
+        font-size: 16px;
+        
+        
+    }
+    .footer__btn-figma{
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/Figma.svg');
+            width: 22px;
+            height: 31px;
+            top: 23px;;
+            left: 25px;
+        }
+    }
+    .footer__btn-sketch{
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/Sketch.svg');
+            width: 34px;
+            height: 31px;
+            top: 21px;
+            left: 17px;
+        }
+    }
+    &__logo{
+        color: $rose;
+        @extend %blackhansans-regular;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &__info{
+        color: $rose;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    
 }
