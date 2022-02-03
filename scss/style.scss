@@ -1,9 +1,5 @@
 @import './vars';
-@import './fonts';
 @import './global';
-@import './libs';
-@import './media';
-
 .header{
     height: 80px;
     padding: 20px 0 20px;
@@ -33,7 +29,6 @@
         
     }
 }
-
 .logo{
   
    @extend %blackhansans-regular;
@@ -41,17 +36,24 @@
    font-size: 26px;
    line-height: 31px; 
 }
+
 .menu{
-    display: flex;
+    &__list{
+        display: flex;
+    }
     right: 0;
     margin: 0 auto;
+   
     &__item{
         padding-right: 43px;
-    }
+    } 
+}
+.adaptive__btn{
+    display: none;
 }
 .top{
     &__inner{
-        height: 737px;
+        height: 742px;
         background-image: url('../images/top-bg.jpg');
         background-repeat: no-repeat;
         background-position: center center;
@@ -63,12 +65,13 @@
     &__title{
         margin: 0 auto;
         max-width: 700px;
+        font-size: 120px;
+        line-height: 133px;
     }
     &__title-main,  
     &__title-second{
         @extend %blackhansans-regular;
-        font-size: 120px;
-        line-height: 133px;
+        
     }
     &__title-main{
         color: $rose;
@@ -313,7 +316,7 @@
     background-size: contain;
     padding: 50px 0;
     &__content{
-        max-width: 507px;
+        max-width: 507px;   
         margin-left: auto;
     }
     
@@ -435,3 +438,9 @@
     }
     
 }
+
+
+@import './fonts';
+
+@import './libs';
+@import './media';

@@ -18,14 +18,6 @@ body {
   font-weight: 900;
 }
 
-@font-face {
-  font-family: 'MotterCorpusStd-Regular', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  src: local("MotterCorpusStd-Regular"), url("/fonts/MotterCorpusStd-Regular.otf") format("otd");
-  font-display: swap;
-}
-
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -172,19 +164,26 @@ body {
 }
 
 .menu {
+  right: 0;
+  margin: 0 auto;
+}
+
+.menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  right: 0;
-  margin: 0 auto;
 }
 
 .menu__item {
   padding-right: 43px;
 }
 
+.adaptive__btn {
+  display: none;
+}
+
 .top__inner {
-  height: 737px;
+  height: 742px;
   background-image: url("../images/top-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -196,9 +195,6 @@ body {
 .top__title {
   margin: 0 auto;
   max-width: 700px;
-}
-
-.top__title-main, .top__title-second {
   font-size: 120px;
   line-height: 133px;
 }
@@ -624,5 +620,407 @@ body {
   color: #FFCCBC;
   font-size: 16px;
   line-height: 21px;
+}
+
+@font-face {
+  font-family: 'MotterCorpusStd-Regular', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: local("MotterCorpusStd-Regular"), url("/fonts/MotterCorpusStd-Regular.otf") format("otd");
+  font-display: swap;
+}
+
+@media (max-width: 1184px) {
+  .rewievs__title {
+    font-size: 50px;
+    line-height: 52px;
+    margin-bottom: 23px;
+  }
+  .rewievs__content {
+    max-width: 705px;
+  }
+  .rewievs__item {
+    width: 215px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  .rewievs__rewievs__text {
+    font-size: 11px;
+    line-height: 15px;
+    margin-bottom: 11px;
+  }
+}
+
+@media (max-width: 885px) {
+  body {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .container {
+    padding: 0 50px;
+  }
+  .menu ul {
+    display: none;
+  }
+  .adaptive__btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .adaptive__btn::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .adaptive__btn::after {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    margin-bottom: 0px;
+  }
+  .adaptive__btn-line {
+    display: block;
+    background-color: #000;
+    width: 25px;
+    height: 2px;
+    margin-bottom: 6px;
+  }
+  .header {
+    height: 78px;
+    padding: 15px 0 15px;
+  }
+  .header__btn {
+    padding: 7px 34px;
+    font-size: 13px;
+  }
+  .top__inner {
+    height: 487px;
+  }
+  .top__title {
+    max-width: 513px;
+    font-size: 80px;
+    line-height: 86px;
+  }
+  .top__title-second::before {
+    content: "";
+    background-image: url("../images/unicorn-resize.png");
+    width: 350px;
+    height: 375px;
+    -webkit-transform: translateX(-14%);
+            transform: translateX(-14%);
+    top: -127%;
+  }
+  .infinity,
+  .magic {
+    padding: 49px 0;
+  }
+  .infinity__title,
+  .magic__title {
+    font-size: 65px;
+    line-height: 75px;
+  }
+  .destiny,
+  .futher,
+  .quality {
+    height: 730px;
+  }
+  .destiny__content,
+  .futher__content,
+  .quality__content {
+    padding-left: 20px;
+  }
+  .destiny__title,
+  .futher__title,
+  .quality__title {
+    font-size: 51px;
+    line-height: 53px;
+    margin-bottom: 45px;
+    max-width: 800px;
+  }
+  .destiny__text,
+  .futher__text,
+  .quality__text {
+    max-width: 260px;
+    margin-bottom: 30px;
+  }
+  .destiny__link,
+  .futher__link,
+  .quality__link {
+    font-size: 11px;
+  }
+  .destiny__link::before,
+  .futher__link::before,
+  .quality__link::before {
+    top: -5px;
+  }
+  .futher {
+    height: 680px;
+  }
+  .rewievs__title {
+    font-size: 50px;
+    line-height: 52px;
+    margin-bottom: 23px;
+  }
+  .rewievs__content {
+    max-width: 600px;
+  }
+  .rewievs__item {
+    width: 180px;
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+  .rewievs__text {
+    font-size: 10px;
+    line-height: 13px;
+    margin-bottom: 8px;
+  }
+  .rewievs__name {
+    font-size: 9px;
+    line-height: 11px;
+  }
+  .rewievs__position {
+    font-size: 9px;
+    line-height: 11px;
+  }
+  .lesser__content {
+    max-width: 360px;
+  }
+  .lesser__title {
+    font-size: 55px;
+    line-height: 62px;
+    margin-bottom: 29px;
+  }
+}
+
+@media (max-width: 670px) {
+  .rewievs__title {
+    font-size: 40px;
+    line-height: 42px;
+    margin-bottom: 23px;
+  }
+  .rewievs__content {
+    max-width: 450px;
+  }
+  .rewievs__item {
+    width: 130px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .rewievs__text {
+    font-size: 9px;
+    line-height: 11px;
+    margin-bottom: 8px;
+  }
+  .rewievs__name {
+    font-size: 9px;
+    line-height: 11px;
+  }
+  .rewievs__position {
+    font-size: 9px;
+    line-height: 11px;
+  }
+  .lesser {
+    background-image: none;
+    height: 350px;
+    padding: 19px 0;
+  }
+  .lesser__content {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .lesser__title {
+    font-size: 35px;
+    line-height: 47px;
+    margin-bottom: 29px;
+  }
+  .lesser__text {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 565px) {
+  body {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .top__title {
+    font-size: 61px;
+    line-height: 73px;
+    margin-bottom: 43px;
+  }
+  .infinity,
+  .magic {
+    padding: 40px 0;
+  }
+  .infinity__title,
+  .magic__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .destiny,
+  .futher,
+  .quality {
+    height: 600px;
+  }
+  .destiny__title,
+  .futher__title,
+  .quality__title {
+    font-size: 35px;
+    line-height: 37px;
+    margin-bottom: 40px;
+    max-width: 800px;
+  }
+  .destiny__text,
+  .futher__text,
+  .quality__text {
+    max-width: 200px;
+  }
+  .futher,
+  .quality {
+    height: 350px;
+    padding: 50px 0;
+  }
+  .futher__image,
+  .quality__image {
+    display: none;
+  }
+  .futher__text,
+  .quality__text {
+    max-width: 400px;
+  }
+  .rewievs {
+    padding: 20px 0;
+  }
+  .rewievs__container {
+    padding: 0;
+  }
+  .rewievs__content {
+    display: inline-block;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 600px;
+  }
+  .rewievs__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .rewievs__item {
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  .rewievs__text {
+    font-size: 13px;
+    line-height: 17px;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  .rewievs__item-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rewievs__item-person {
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: left;
+  }
+  .rewievs__name {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .rewievs__position {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+  }
+}
+
+@media (max-width: 455px) {
+  body {
+    font-size: 11px;
+    line-height: 17px;
+  }
+  .container {
+    padding: 0 25px;
+  }
+  .header__btn {
+    padding: 5px 20px;
+    font-size: 10px;
+  }
+  .logo {
+    font-size: 21px;
+  }
+  .top__inner {
+    height: 350px;
+  }
+  .top__title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .top__title-second::before {
+    content: "";
+    background-image: url("../images/unicorn-resize-min.png");
+    width: 250px;
+    height: 268px;
+    -webkit-transform: translateX(-14%);
+            transform: translateX(-14%);
+    top: -127%;
+  }
+  .infinity,
+  .magic {
+    padding: 40px 0;
+  }
+  .infinity__title,
+  .magic__title {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 16px;
+  }
+  .infinity__text,
+  .magic__text {
+    margin-bottom: 16px;
+  }
+  .destiny,
+  .futher,
+  .quality {
+    height: 480px;
+  }
+  .destiny__title,
+  .futher__title,
+  .quality__title {
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+  .destiny__text,
+  .futher__text,
+  .quality__text {
+    max-width: 160px;
+  }
+  .futher,
+  .quality {
+    height: 330px;
+  }
+  .futher__text,
+  .quality__text {
+    max-width: 300px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
