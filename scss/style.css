@@ -511,7 +511,6 @@ body {
 }
 
 .app {
-  height: 800px;
   background-image: url("../images/app-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -571,11 +570,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   max-width: 750px;
   margin-bottom: 130px;
+}
+
+.footer__buttons {
+  padding: 10px;
 }
 
 .footer__btn {
@@ -628,6 +633,27 @@ body {
   font-style: normal;
   src: local("MotterCorpusStd-Regular"), url("/fonts/MotterCorpusStd-Regular.otf") format("otd");
   font-display: swap;
+}
+
+@media (max-width: 1184px) {
+  .app {
+    padding: 30px 0;
+    background-image: none;
+  }
+  .app__content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .app__title {
+    text-align: center;
+  }
+  .app__text {
+    text-align: center;
+  }
+  .app__img {
+    padding-left: 0;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 1184px) {
@@ -796,6 +822,24 @@ body {
     line-height: 62px;
     margin-bottom: 29px;
   }
+  .app {
+    padding: 20px 0;
+    background-image: none;
+  }
+  .app__title {
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+  .app__text {
+    margin-bottom: 20px;
+  }
+  .footer {
+    padding: 88px 0 45px;
+  }
+  .footer__title {
+    font-size: 65px;
+    line-height: 85px;
+  }
 }
 
 @media (max-width: 670px) {
@@ -841,6 +885,17 @@ body {
   }
   .lesser__text {
     margin-bottom: 30px;
+  }
+  .footer {
+    padding: 74px 0 45px;
+  }
+  .footer__content {
+    margin-bottom: 100px;
+  }
+  .footer__title {
+    font-size: 50px;
+    line-height: 70px;
+    margin-bottom: 50px;
   }
 }
 
@@ -950,6 +1005,10 @@ body {
     font-weight: 400;
     line-height: 13px;
   }
+  .app__title {
+    line-height: 53px;
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 455px) {
@@ -1021,6 +1080,20 @@ body {
   .futher__text,
   .quality__text {
     max-width: 300px;
+  }
+  .footer {
+    padding: 74px 0 45px;
+  }
+  .footer__content {
+    margin-bottom: 80px;
+  }
+  .footer__title {
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+  .footer__btn {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */
